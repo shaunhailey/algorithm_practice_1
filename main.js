@@ -130,11 +130,32 @@ ANSWER:
 The factorial function should return the factorial value.
 e.g. factorial( 6 ) should return the number 720
 **********************/
-
+// // NOTE: LINES 135-151 ARE MY ATTEMPT(S) AT SOLVING THE PROBLEM WITH FOR LOOPS,
+// KEEPING AROUND FOR FUTURE FUNSIES, LINES 152-159 SOLVE THE PROBLEM USING RECURSION.
+// var num = 6
+// let series = []
+// let jseries = []
+//
+// let factorial = function(num) {
+//   for (let i = 1; i <= num; i++) {
+//     series.push[i]
+//     for (let j = 0; j < series.length; j++) {
+//       jseries.push[j]
+//       var boogers = []
+//       for (let k = 1; k < jseries.length; k++) {
+//         boogers.push(series[k] * jseries[k])
+//         return value
+//       }
+//     }
+//   }
+// }
 var num = 6
-
 let factorial = function(num) {
-  // YOUR CODE HERE
+  if (num === 1) {
+    return 1
+  }
+  value = factorial(num - 1) * num
+  return value
 }
 
 /*** 4 ***/
@@ -181,6 +202,15 @@ e.g. interpolate( 1, 2, 4 ) should
 return the array [ 1, 1.25, 1.5, 1.75, 2 ]
 ***********************/
 
+//MY NOTES: this ought to look like>>>>>>>>>>>>> end - start = amount;
+// amount divided by count = interval; loop start+interval * count so the array
+// is equivalent to end.
+
 let interpolate = function(start, end, count) {
-  // YOUR CODE HERE
+  let amount = end - start
+  let interval = amount / count
+  for (i = 0; i <= count; i++)
+  let interray = []
+  
+  return interray
 }
