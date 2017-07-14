@@ -99,9 +99,12 @@ if it is not rush hour, the function should return
 let timeOfDay = 500
 
 function navigateRushHour(timeOfDay) {
-  // YOUR CODE HERE
+  if ((timeOfDay >= 600 && timeOfDay <= 900) || (timeOfDay >= 1600 && timeOfDay <= 1800)) {
+    return 'The time of day is ' + timeOfDay + ", I'm going around the city."
+  } else {
+    return 'The time of day is ' + timeOfDay + ", I'm going through the city."
+  }
 }
-
 /*** 3 ***/
 /******************
 INSTRUCTIONS:
