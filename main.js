@@ -207,10 +207,11 @@ return the array [ 1, 1.25, 1.5, 1.75, 2 ]
 // is equivalent to end.
 
 let interpolate = function(start, end, count) {
-  let amount = end - start
-  let interval = amount / count
-  for (i = 0; i <= count; i++)
+  let interval = start / count
   let interray = []
-  
+  for (i = 0; i <= count - 1; i++) {
+    start += interval
+    interray.push(start)
+  }
   return interray
 }
